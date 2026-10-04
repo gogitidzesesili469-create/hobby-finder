@@ -1,0 +1,195 @@
+```html
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Hobby Finder</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">✨ Hobby Finder</div>
+
+            <div class="nav-links">
+                <a href="#home">მთავარი</a>
+                <a href="#hobbies">ჰობები</a>
+                <a href="#about">ჩვენ შესახებ</a>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+            <p class="small-title">იპოვე ის, რაც გიყვარს 💜</p>
+
+            <h1>
+                აღმოაჩინე შენი
+                <span>ახალი ჰობი!</span>
+            </h1>
+
+            <p>
+                ვერ გადაწყვიტე, რა გააკეთო თავისუფალ დროს?
+                დაათვალიერე სხვადასხვა ჰობი და იპოვე ის,
+                რომელიც ყველაზე მეტად მოგწონს.
+            </p>
+
+            <a href="#hobbies" class="main-button">
+                ჰობების ნახვა →
+            </a>
+        </div>
+
+        <div class="hero-card">
+            <div class="emoji">🎨</div>
+            <h3>შენი იდეალური ჰობი შეიძლება აქ იყოს!</h3>
+            <p>დაათვალიერე, მოძებნე და აღმოაჩინე.</p>
+        </div>
+
+    </section>
+
+
+    <!-- Search Section -->
+    <section class="search-section">
+
+        <h2>🔎 მოძებნე ჰობი</h2>
+
+        <p>ჩაწერე ჰობის სახელი და იპოვე ის მარტივად.</p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="მაგ: ცეკვა, ხატვა, პროგრამირება..."
+        >
+
+    </section>
+
+
+    <!-- Hobbies -->
+    <section id="hobbies" class="hobbies-section">
+
+        <div class="section-title">
+            <p>აღმოაჩინე ახალი შესაძლებლობები</p>
+            <h2>🌈 პოპულარული ჰობები</h2>
+        </div>
+
+        <div id="hobbiesContainer" class="hobbies-container">
+
+            <div class="hobby-card">
+                <div class="hobby-icon">🎨</div>
+                <h3>ხატვა</h3>
+                <p>გამოიყენე ფანტაზია და შექმენი შენი საკუთარი ნახატები.</p>
+                <span>კრეატიული</span>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">💃</div>
+                <h3>ცეკვა</h3>
+                <p>ისწავლე ახალი მოძრაობები და გაერთე მუსიკასთან ერთად.</p>
+                <span>აქტიური</span>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">💻</div>
+                <h3>პროგრამირება</h3>
+                <p>შექმენი ვებსაიტები, თამაშები და საინტერესო პროექტები.</p>
+                <span>ტექნოლოგია</span>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">📸</div>
+                <h3>ფოტოგრაფია</h3>
+                <p>ისწავლე საინტერესო მომენტების ლამაზად გადაღება.</p>
+                <span>კრეატიული</span>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">🎵</div>
+                <h3>მუსიკა</h3>
+                <p>ისწავლე ინსტრუმენტი ან აღმოაჩინე ახალი მუსიკა.</p>
+                <span>შემოქმედებითი</span>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">📚</div>
+                <h3>კითხვა</h3>
+                <p>აღმოაჩინე საინტერესო წიგნები და ახალი ისტორიები.</p>
+                <span>განვითარება</span>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">⚽</div>
+                <h3>სპორტი</h3>
+                <p>აირჩიე სპორტის სახეობა და გაატარე დრო აქტიურად.</p>
+                <span>აქტიური</span>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">🍳</div>
+                <h3>კულინარია</h3>
+                <p>ისწავლე მარტივი რეცეპტები და მოამზადე ახალი კერძები.</p>
+                <span>საინტერესო</span>
+            </div>
+
+        </div>
+
+        <p id="noResults" class="no-results">
+            😕 ასეთი ჰობი ვერ მოიძებნა.
+        </p>
+
+    </section>
+
+
+    <!-- About -->
+    <section id="about" class="about-section">
+
+        <div>
+            <p class="small-title">რატომ Hobby Finder?</p>
+
+            <h2>შენი თავისუფალი დრო უფრო საინტერესო გახადე 💜</h2>
+
+            <p>
+                ჩვენი მიზანია 13–18 წლის მოზარდებს დავეხმაროთ
+                ახალი ინტერესების აღმოჩენაში.
+                აქ შეგიძლია დაათვალიერო სხვადასხვა ჰობი
+                და იპოვო ის, რაც შენთვის საინტერესოა.
+            </p>
+        </div>
+
+        <div class="about-box">
+            <div>✨ ბევრი არჩევანი</div>
+            <div>🔎 მარტივი ძებნა</div>
+            <div>🎯 ახალი ინტერესები</div>
+            <div>💜 მარტივი გამოყენება</div>
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <h3>✨ Hobby Finder</h3>
+
+        <p>
+            იპოვე ჰობი. აღმოაჩინე საკუთარი შესაძლებლობები.
+        </p>
+
+        <p class="copyright">
+            © 2026 Hobby Finder
+        </p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+```
